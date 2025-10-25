@@ -8,28 +8,30 @@
     <meta name="description" content="Seven guiding principles for healing work: Simple Tools, Accessibility and Inclusion, Healing Relationship to Self and Others, Practical Magic, Body-based Healing, Societal Healing, and Humor and Adventure.">
     
 
-    <!-- Tailwind CSS from CDN for now -->
-    <script src="https://cdn.tailwindcss.com"></script>
-
     <!-- Custom styles -->
     <link rel="stylesheet" href="../static/css/main.css">
 
     
 </head>
-<body class="font-sans antialiased">
-    <!-- Header/Navigation -->
-    <header class="bg-white shadow-sm">
-        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-            <div class="flex justify-between items-center">
-                <a href="../" class="text-2xl font-bold text-gray-900">
+<body>
+    <!-- Social Consciousness Banner -->
+    <div class="awareness-banner">
+        FREE PALESTINE
+    </div>
+
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <div style="max-width: 1200px; margin: 0 auto; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center;">
+                <a href="../" style="font-size: 1.5rem; font-weight: bold; color: var(--primary-blue);">
                     Moriah J. Williams
                 </a>
-                <div class="flex space-x-6">
-                    <a href="../" class="text-gray-700 hover:text-gray-900">Home</a>
-                    <a href="../services/" class="text-gray-700 hover:text-gray-900">Services</a>
-                    <a href="./" class="text-gray-700 hover:text-gray-900">Principles</a>
-                    <a href="../about/" class="text-gray-700 hover:text-gray-900">About</a>
-                    <a href="../contact/" class="text-gray-700 hover:text-gray-900">Contact</a>
+                <div style="display: flex; gap: 2rem;">
+                    <a href="../">Home</a>
+                    <a href="../services/">Services</a>
+                    <a href="./">Principles</a>
+                    <a href="../about/">About</a>
+                    <a href="../contact/">Contact</a>
                 </div>
             </div>
         </nav>
@@ -60,14 +62,51 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-100 mt-16">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-            <p class="text-center text-gray-600">
-                ©  Moriah J. Williams. All rights reserved.
-            </p>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-newsletter">
+                <h3>Stay Connected</h3>
+                <form class="newsletter-form" action="#" method="post">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+
+            <div class="footer-social">
+                <p>&copy; 2025 Moriah J. Williams. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook">Facebook</a>
+                    <a href="#" aria-label="Instagram">Instagram</a>
+                    <a href="#" aria-label="Email">Email</a>
+                </div>
+            </div>
         </div>
     </footer>
 
     
+
+    <script>
+    // Accordion functionality
+    document.addEventListener('DOMContentLoaded', function() {
+        const accordionHeaders = document.querySelectorAll('.accordion-header');
+
+        accordionHeaders.forEach(header => {
+            header.addEventListener('click', function() {
+                const item = this.parentElement;
+                const wasActive = item.classList.contains('active');
+
+                // Close all accordion items
+                document.querySelectorAll('.accordion-item').forEach(i => {
+                    i.classList.remove('active');
+                });
+
+                // Open clicked item if it wasn't active
+                if (!wasActive) {
+                    item.classList.add('active');
+                }
+            });
+        });
+    });
+    </script>
 </body>
 </html>

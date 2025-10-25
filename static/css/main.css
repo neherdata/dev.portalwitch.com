@@ -1,72 +1,213 @@
-/* Custom styles for Moriah J. Williams website */
+/* Moriah J. Williams - Custom Styles */
+/* Matching Wix site aesthetic: calm, healing, nature-inspired */
 
-/* Prose styling for markdown content */
-.prose {
-    color: #374151;
+:root {
+    --primary-blue: #1E4D7B;
+    --deep-blue: #0D2840;
+    --light-blue: #5B8DB8;
+    --white: #FFFFFF;
+    --off-white: #F8F9FA;
+    --text-dark: #2C3E50;
+    --text-light: #6C757D;
 }
 
-.prose h1 {
-    font-size: 2.25rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.prose h2 {
-    font-size: 1.875rem;
-    font-weight: 600;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: var(--text-dark);
+    line-height: 1.6;
+    background-color: var(--off-white);
 }
 
-.prose h3 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-top: 1.5rem;
-    margin-bottom: 0.75rem;
+/* Header with Spider Web Background */
+.hero-header {
+    position: relative;
+    height: 400px;
+    background: linear-gradient(rgba(30, 77, 123, 0.7), rgba(13, 40, 64, 0.8)),
+                url('/static/images/spider-web-header.png') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--white);
+    margin-bottom: 3rem;
 }
 
-.prose p {
-    margin-bottom: 1rem;
-    line-height: 1.75;
-}
-
-.prose a {
-    color: #2563eb;
-    text-decoration: none;
-}
-
-.prose a:hover {
-    text-decoration: underline;
-}
-
-.prose ul, .prose ol {
-    margin-left: 1.5rem;
-    margin-bottom: 1rem;
-}
-
-.prose li {
+.hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: 300;
+    letter-spacing: 2px;
     margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-/* Accordion styling for principles */
-.accordion-button {
-    width: 100%;
-    text-align: left;
-    padding: 1rem;
-    background-color: #f9fafb;
-    border: 1px solid #e5e7eb;
-    border-radius: 0.5rem;
+.hero-content .tagline {
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-style: italic;
+    opacity: 0.9;
+}
+
+.hero-content .subtitle {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    opacity: 0.85;
+}
+
+/* Navigation */
+header nav {
+    background-color: var(--white);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* Content Sections */
+.content-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+.centered-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Two-Column Layout */
+.two-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin: 3rem 0;
+}
+
+@media (max-width: 768px) {
+    .two-column {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Collapsible Accordion for Principles */
+.accordion {
+    background-color: var(--white);
+    border-radius: 8px;
+    margin: 2rem 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-item {
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.accordion-item:last-child {
+    border-bottom: none;
+}
+
+.accordion-header {
+    padding: 1.5rem;
     cursor: pointer;
-    transition: background-color 0.2s;
+    background-color: var(--white);
+    transition: background-color 0.3s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.accordion-button:hover {
-    background-color: #f3f4f6;
+.accordion-header:hover {
+    background-color: var(--off-white);
+}
+
+.accordion-header h3 {
+    color: var(--primary-blue);
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.accordion-icon {
+    font-size: 1.5rem;
+    color: var(--primary-blue);
+    transition: transform 0.3s;
+}
+
+.accordion-item.active .accordion-icon {
+    transform: rotate(180deg);
 }
 
 .accordion-content {
-    padding: 1rem;
-    border-left: 3px solid #3b82f6;
-    margin-top: 0.5rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.accordion-item.active .accordion-content {
+    max-height: 500px;
+}
+
+.accordion-body {
+    padding: 0 1.5rem 1.5rem 1.5rem;
+    color: var(--text-dark);
+    line-height: 1.8;
+}
+
+/* Footer */
+footer {
+    background-color: var(--deep-blue);
+    color: var(--white);
+    padding: 3rem 0 2rem;
+    margin-top: 4rem;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.footer-newsletter {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.footer-newsletter h3 {
+    font-size: 1.5rem;
     margin-bottom: 1rem;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.newsletter-form button {
+    padding: 0.75rem 2rem;
+    background-color: var(--light-blue);
+    color: var(--white);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.newsletter-form button:hover {
+    background-color: var(--primary-blue);
 }
