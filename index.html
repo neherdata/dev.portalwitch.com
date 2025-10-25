@@ -21,17 +21,15 @@
 
     <!-- Navigation -->
     <header>
-        <nav>
-            <div style="max-width: 1200px; margin: 0 auto; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center;">
-                <a href="./" style="font-size: 1.5rem; font-weight: bold; color: var(--primary-blue);">
-                    Moriah J. Williams
-                </a>
-                <div style="display: flex; gap: 2rem;">
-                    <a href="./">Home</a>
-                    <a href="services/">Services</a>
-                    <a href="principles/">Principles</a>
-                    <a href="about/">About</a>
-                    <a href="contact/">Contact</a>
+        <nav class="main-nav">
+            <div class="nav-container">
+                <div class="nav-links">
+                    <a href="./">HOME</a>
+                    <a href="services/">SERVICES</a>
+                    <a href="about/">BIO</a>
+                    <a href="blog">BLOG & GALLERIES</a>
+                    <a href="classes">CLASSES</a>
+                    <a href="contact/">BOOK A SESSION</a>
                 </div>
             </div>
         </nav>
@@ -43,131 +41,235 @@
 <!-- Hero Header with Spider Web Background -->
 <div class="hero-header">
     <div class="hero-content">
-        <h1>Moriah J. Williams</h1>
-        
-        <p class="tagline">Intuitive Healing</p>
-        
-        
+        <h1>Moriah J. Williams Intuitive Healing</h1>
     </div>
 </div>
 
-<!-- Intro Section -->
+<!-- Two-Column Layout: Main Content + Sidebar -->
+<div class="homepage-container">
+    <!-- Left Column: Main Content -->
+    <div class="main-content">
+        <!-- Taglines -->
+        <div class="tagline-section">
+            <h2>Mending the Web</h2>
+            <h3>Delight in Healing and Liberation</h3>
+            <p><strong>Private Sessions ~ Education ~ Self-Care and Community Care</strong></p>
+        </div>
 
-<div class="content-section centered-content">
-    <p><strong>Private Sessions ~ Education ~ Self-Care and Community Care</strong></p>
-<p>We all have an innate capacity for healing ourselves and the world around us.</p>
-<p>We can trust ourselves to live in alignment with our hearts. The world needs our creative power.</p>
-<p>Together we explore the innate wisdom of your patterns and difficulties to learn what those patterns are trying to communicate or achieve.</p>
-<p>We work collaboratively with a variety of tools to meet you where you are in any given moment:</p>
-<ul>
-<li>Inquiry</li>
-<li>Self-care</li>
-<li>Energy work</li>
-<li>Somatic practices</li>
-</ul>
-<p>As we explore your experience you may:</p>
-<ul>
-<li>Reclaim your energy and aliveness</li>
-<li>Make friends with yourself</li>
-<li>Trust your power</li>
-<li>Experience spaciousness</li>
-<li>Deepen your ability to listen</li>
-<li>Advocate for yourself and others more clearly</li>
-<li>Reconnect with your intuition and sense of magic</li>
-<li>Feel comfort and ease in your body, life, and relationships</li>
-</ul>
-<p>Our healing opens doors for those around us, those who came before us, and those who come after us.</p>
+        <!-- Core Philosophy -->
+        <div class="content-section">
+            <p>We all have an innate capacity for healing ourselves and the world around us.</p>
+            <p>We can trust ourselves to live in alignment with our hearts. The world needs our creative power.</p>
+        </div>
 
+        <!-- FREE PALESTINE Image -->
+        <div class="content-images">
+            <img src="static/images/free-palestine.png" alt="FREE CONGO FREE SUDAN FREE HAITI FREE PALESTINE" />
+        </div>
+
+        <!-- Doe at Glacier Image -->
+        <div class="content-images">
+            <img src="static/images/doe-glacier.png" alt="Silhouette of a doe at Bowman Lake in Glacier National Park at dawn" />
+            <p style="text-align: center; font-size: 0.9rem; color: var(--text-light); font-style: italic;">
+                [Image: Silhouette of a doe treading ankle-deep through the waters of Bowman Lake in Glacier National Park at dawn. The horizon is ringed with blue mountains. Photo: Kevin LeFevre]
+            </p>
+        </div>
+
+        <!-- About the Work -->
+        <div class="content-section">
+            <p>Together we explore the innate wisdom of your patterns and difficulties to learn what those patterns are trying to communicate or achieve.</p>
+
+            <p>We work collaboratively with a variety of tools to meet you where you are in any given moment:</p>
+            <ul>
+                <li>inquiry</li>
+                <li>self-care</li>
+                <li>energy work</li>
+                <li>somatic practices</li>
+            </ul>
+
+            <p>As we explore your experience you may:</p>
+            <ul>
+                <li>Reclaim your energy and aliveness</li>
+                <li>Make friends with yourself</li>
+                <li>Trust your power</li>
+                <li>Experience spaciousness</li>
+                <li>Deepen your ability to listen</li>
+                <li>Advocate for yourself and others more clearly</li>
+                <li>Reconnect with your intuition and sense of magic</li>
+                <li>Feel comfort and ease in your body, life, and relationships</li>
+            </ul>
+
+            <p><strong>Our healing opens doors for those around us, those who came before us, and those who come after us.</strong></p>
+        </div>
+
+        <!-- Services Offered -->
+        <div class="service-links">
+            <h2>
+                <a href="services/body-based-distance-healing">Body-Based Distance Healing</a> ~
+                <a href="services/spirit-communication">Spirit Communication</a> ~
+                <a href="services/animal-communication">Animal Communication</a><br>
+                <a href="services/therapeutic-bodywork">Ortho-Bionomy®*</a> ~
+                <a href="services/therapeutic-bodywork">Cranial Sacral Therapy</a> ~
+                <a href="services/emotional-freedom-technique">Emotional Freedom Technique (EFT)</a><br>
+                <a href="services/flower-essences">Flower Essences</a> ~
+                <a href="services/death-and-dying">The Dying Process and Beyond</a> ~ NARM®-Informed Practitioner
+            </h2>
+        </div>
+    </div>
+
+    <!-- Right Column: Principles Sidebar Accordion -->
+    <aside class="sidebar">
+        <div class="principles-sidebar">
+            <h2>Principles</h2>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>Simple Tools</h3>
+                        <span class="accordion-icon">▼</span>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-body">
+                            <p>All the techniques I use with clients are both practical and magical. We work with movement, stillness, listening, and perception in ways that integrate body and energy, inner life and community. We work with how to ask questions and how to honor the responses from ourselves and our environment so healing can unfold in the way that it wants to. The web of existence wants our love and participation—healing ourselves and healing the whole is part of the same practice.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>Accessibility and Inclusion</h3>
+                        <span class="accordion-icon">▼</span>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-body">
+                            <p>Primary to the work we do together is that everyone deserves a place at the table, and everyone has a right to health and happiness. Coming to life as our full selves and honoring the selves of others is central to the work of undoing marginalization. In healing work, as in all things in modern society, it is important to bring our awareness to how our individual and community well-being and power are affected by and can affect white supremacy culture and related forms of domination. This can help us to normalize the day-to-day dismantling of these systems, as we remember how to root ourselves in ancient and new frameworks of relationship and care.</p>
+                            <p>I am continually working toward increasing the accessibility and inclusiveness of this site and I am grateful for constructive input on how to do so. In the classes and educational material I do my best to offer several possibilities in the explorations as well as variety in presentation to create as many entry points as possible for reflection and healing.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>Healing Relationship to Self and Others</h3>
+                        <span class="accordion-icon">▼</span>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-body">
+                            <p>Do you want to discover and deepen your power for healing? Do you want to make friends with yourself in a way that releases you from old patterns and frees you for what is really important to you? Do you want to feel connection and joy in your body rather than feeling at odds with it? Do you want to remember how to listen with all of the parts of you, so you are really here for your own life?</p>
+                            <p>I think for all of us, the answer is yes to these questions. In my experience one of the biggest obstacles to feeling fully alive is that we don't believe we have the capacity to feel what we are feeling. Another obstacle is that we are afraid to fully inhabit our own power—we don't know if we are up to dealing with the consequences of our actions. And it is true there are strong social forces which are depriving us of resources we need, we don't have a duty to hold these patterns in our bodies and minds. The more we connect with ourselves, the more we remember how powerful we are.</p>
+                            <p>A lot of times we have learned that we need to suppress ourselves to be good people, to have our needs met, to earn our right to existence, to be safe. But being kind and attentive with ourselves and our internal wisdom is the very thing that helps us help each other and be responsive to the energies that give us life.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>Practical Magic</h3>
+                        <span class="accordion-icon">▼</span>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-body">
+                            <p>We are surrounded by beings who want to help us heal the web of existence in very concrete ways. To me this is the most remarkable and satisfying work we can participate in. It is humbling and heartening to realize that there are always ones ready to support us. Connecting with them is a skill, not a talent, and they are eagerly waiting for us to reach out. They want us to do our part, too—the more we can listen and open ourselves and make conscious choices about our energy, the more we can heal the world together. And seriously, these folks know how to party. I find that the wisest beings are the ones who delight in how every moment, the universe is new.</p>
+                            <p>My perspective is clearly a spiritual one, but I do my best to offer secular approaches as well. Many of what I consider to be my spiritual principles, such as attention, gratitude, responsibility, humor, awe, and sensory enjoyment, are values I inherited from stubbornly secular people. No matter what we are always in relationship, so this site is for folks who are interested in living a life full of meaning, whether you frame that spiritually or not.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>Body-based Healing</h3>
+                        <span class="accordion-icon">▼</span>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-body">
+                            <p>According to Ortho-Bionomy®, everything in the universe has a self-righting reflex. This is not how mainstream culture teaches us to relate to our bodies, but the truth is our bodies are intensely opinionated and also very responsive to our attentiveness. During a session we may engage your reflexes to release pain and feel more comfort in your body, or see what shifts when you bring new awareness to posture, play, and body mechanics. Sometimes the body just needs gentle witness and validation to complete its own processes. Because matter and energy are connected, this work can be done just as easily at a distance as in person.</p>
+                            <p>Sessions we do with your guides are equally physical in nature. While the work may sound abstract or fanciful, it integrates tangibly in all aspects of your being. Connecting with multiple realms is not separate from our lives and our physical reality—this communication affects our bodies and our experiences.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>Societal Healing</h3>
+                        <span class="accordion-icon">▼</span>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-body">
+                            <p>A key part of healing is consciously exploring how our inner lives interact with social structures. There are so many ways that we are silenced and taught to erase each other. We have also become conditioned to be estranged from our bodies and our inner wisdom. When we clear the hold that these messages have on us, we can reclaim our power to imagine and bring about a world in which we can truly care for each other and all beings. This world is our home, and we deserve to live joyfully together.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>Humor and Adventure</h3>
+                        <span class="accordion-icon">▼</span>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-body">
+                            <p>Humor heals us by freeing us from the power of negative patterns and helping us break through to new understanding and connection. In every session something comes forth that I have never seen before. We are endlessly inventive and we are always learning. This excitement of encounter is not reserved for specific spiritual practices only—the purpose of these practices is to support us in bringing a profoundly awake joy to all aspects of our lives.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
 </div>
 
-
-<!-- Services Preview -->
-<div class="content-section">
-    <h2>Healing Modalities</h2>
-    <div class="services-grid">
-        <div class="service-card">
-            <h3>Intuitive Healing</h3>
-            <p>Connect with your inner wisdom and innate healing capacity.</p>
-        </div>
-        <div class="service-card">
-            <h3>Energy Work</h3>
-            <p>Balance and harmonize your energy field for deep transformation.</p>
-        </div>
-        <div class="service-card">
-            <h3>Somatic Practices</h3>
-            <p>Listen to the wisdom of your body through gentle, embodied practices.</p>
-        </div>
-    </div>
-    <div class="text-center mt-4">
-        <a href="services/">Explore all services →</a>
-    </div>
+<!-- Gallery Callout -->
+<div class="content-section centered-content" style="margin-top: 3rem;">
+    <p>Check out our new <a href="blog">gallery</a> page to see more memes</p>
+    <p>or follow us on social media - links in footer.</p>
 </div>
 
-<!-- Principles Preview with Accordion -->
-<div class="content-section">
-    <h2>Guiding Principles</h2>
-    <div class="accordion">
-        <div class="accordion-item">
-            <div class="accordion-header">
-                <h3>Wholeness</h3>
-                <span class="accordion-icon">▼</span>
-            </div>
-            <div class="accordion-content">
-                <div class="accordion-body">
-                    <p>You are already whole. You have innate wisdom and an innate capacity for healing. My work is to support you in remembering and accessing that wholeness.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="accordion-item">
-            <div class="accordion-header">
-                <h3>Connection</h3>
-                <span class="accordion-icon">▼</span>
-            </div>
-            <div class="accordion-content">
-                <div class="accordion-body">
-                    <p>Healing happens in relationship—with yourself, with others, with the earth, and with the spiritual dimension of life. We are interconnected beings.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="accordion-item">
-            <div class="accordion-header">
-                <h3>Embodiment</h3>
-                <span class="accordion-icon">▼</span>
-            </div>
-            <div class="accordion-content">
-                <div class="accordion-body">
-                    <p>Your body holds wisdom and intelligence. Learning to listen to your body opens pathways to profound healing and self-knowledge.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="text-center mt-4">
-        <a href="principles/">Read all seven principles →</a>
-    </div>
+<!-- Footnotes -->
+<div class="content-section centered-content" style="font-size: 0.85rem; color: var(--text-light); margin-top: 2rem;">
+    <p>* Ortho-Bionomy® is a registered trademark of the Society of Ortho-Bionomy International, Inc. and is used with permission.</p>
 </div>
 
     </main>
 
-    <!-- Footer -->
-    <footer>
+    <!-- Footer with Milky Way Background -->
+    <footer class="footer-milkyway">
         <div class="footer-content">
+            <div class="footer-cta">
+                <a href="contact/" class="book-session-btn">Book a Session</a>
+            </div>
+
             <div class="footer-newsletter">
-                <h3>Stay Connected</h3>
+                <h3>Subscribe to our newsletter and receive a free ebook</h3>
                 <form class="newsletter-form" action="#" method="post">
-                    <input type="email" placeholder="Enter your email" required>
-                    <button type="submit">Subscribe</button>
+                    <input type="text" placeholder="Name*" required>
+                    <input type="email" placeholder="Email*" required>
+                    <button type="submit">Subscribe Now</button>
                 </form>
+                <p style="margin-top: 1rem; font-size: 0.9rem;">
+                    <a href="blog" style="color: var(--white);">Subscribe here</a> to receive new blog post notifications
+                </p>
             </div>
 
             <div class="footer-social">
-                <p>&copy; 2025 Moriah J. Williams. All rights reserved.</p>
-                <div class="social-links">
-                    <a href="#" aria-label="Facebook">Facebook</a>
-                    <a href="#" aria-label="Instagram">Instagram</a>
-                    <a href="#" aria-label="Email">Email</a>
+                <div class="social-icons">
+                    <a href="http://instagram.com/mjwintuitive" target="_blank" aria-label="Instagram">
+                        <span>📷</span>
+                    </a>
+                    <a href="https://www.tiktok.com/@mjwintuitive" target="_blank" aria-label="TikTok">
+                        <span>🎵</span>
+                    </a>
+                    <a href="https://www.pinterest.com/mjwintuitive/_saved/" target="_blank" aria-label="Pinterest">
+                        <span>📌</span>
+                    </a>
+                    <a href="https://www.facebook.com/mjwintuitive" target="_blank" aria-label="Facebook">
+                        <span>👤</span>
+                    </a>
                 </div>
+            </div>
+
+            <div class="footer-legal">
+                <p>&copy; 2018-2021 moriahjwilliams.com</p>
+                <p>
+                    <a href="privacy">Privacy Policy</a>
+                </p>
+                <p>Contact: 505-577-0479 | <a href="mailto:info@moriahjwilliams.com">info@moriahjwilliams.com</a></p>
             </div>
         </div>
     </footer>

@@ -21,17 +21,15 @@
 
     <!-- Navigation -->
     <header>
-        <nav>
-            <div style="max-width: 1200px; margin: 0 auto; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center;">
-                <a href="../" style="font-size: 1.5rem; font-weight: bold; color: var(--primary-blue);">
-                    Moriah J. Williams
-                </a>
-                <div style="display: flex; gap: 2rem;">
-                    <a href="../">Home</a>
-                    <a href="../services/">Services</a>
-                    <a href="../principles/">Principles</a>
-                    <a href="./">About</a>
-                    <a href="../contact/">Contact</a>
+        <nav class="main-nav">
+            <div class="nav-container">
+                <div class="nav-links">
+                    <a href="../">HOME</a>
+                    <a href="../services/">SERVICES</a>
+                    <a href="./">BIO</a>
+                    <a href="../blog">BLOG & GALLERIES</a>
+                    <a href="../classes">CLASSES</a>
+                    <a href="../contact/">BOOK A SESSION</a>
                 </div>
             </div>
         </nav>
@@ -62,24 +60,48 @@
 
     </main>
 
-    <!-- Footer -->
-    <footer>
+    <!-- Footer with Milky Way Background -->
+    <footer class="footer-milkyway">
         <div class="footer-content">
+            <div class="footer-cta">
+                <a href="../contact/" class="book-session-btn">Book a Session</a>
+            </div>
+
             <div class="footer-newsletter">
-                <h3>Stay Connected</h3>
+                <h3>Subscribe to our newsletter and receive a free ebook</h3>
                 <form class="newsletter-form" action="#" method="post">
-                    <input type="email" placeholder="Enter your email" required>
-                    <button type="submit">Subscribe</button>
+                    <input type="text" placeholder="Name*" required>
+                    <input type="email" placeholder="Email*" required>
+                    <button type="submit">Subscribe Now</button>
                 </form>
+                <p style="margin-top: 1rem; font-size: 0.9rem;">
+                    <a href="../blog" style="color: var(--white);">Subscribe here</a> to receive new blog post notifications
+                </p>
             </div>
 
             <div class="footer-social">
-                <p>&copy; 2025 Moriah J. Williams. All rights reserved.</p>
-                <div class="social-links">
-                    <a href="#" aria-label="Facebook">Facebook</a>
-                    <a href="#" aria-label="Instagram">Instagram</a>
-                    <a href="#" aria-label="Email">Email</a>
+                <div class="social-icons">
+                    <a href="http://instagram.com/mjwintuitive" target="_blank" aria-label="Instagram">
+                        <span>📷</span>
+                    </a>
+                    <a href="https://www.tiktok.com/@mjwintuitive" target="_blank" aria-label="TikTok">
+                        <span>🎵</span>
+                    </a>
+                    <a href="https://www.pinterest.com/mjwintuitive/_saved/" target="_blank" aria-label="Pinterest">
+                        <span>📌</span>
+                    </a>
+                    <a href="https://www.facebook.com/mjwintuitive" target="_blank" aria-label="Facebook">
+                        <span>👤</span>
+                    </a>
                 </div>
+            </div>
+
+            <div class="footer-legal">
+                <p>&copy; 2018-2021 moriahjwilliams.com</p>
+                <p>
+                    <a href="../privacy">Privacy Policy</a>
+                </p>
+                <p>Contact: 505-577-0479 | <a href="mailto:info@moriahjwilliams.com">info@moriahjwilliams.com</a></p>
             </div>
         </div>
     </footer>
