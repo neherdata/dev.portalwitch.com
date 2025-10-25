@@ -1,0 +1,72 @@
+/* Custom styles for Moriah J. Williams website */
+
+/* Prose styling for markdown content */
+.prose {
+    color: #374151;
+}
+
+.prose h1 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.prose h2 {
+    font-size: 1.875rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.prose h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.prose p {
+    margin-bottom: 1rem;
+    line-height: 1.75;
+}
+
+.prose a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.prose a:hover {
+    text-decoration: underline;
+}
+
+.prose ul, .prose ol {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.prose li {
+    margin-bottom: 0.5rem;
+}
+
+/* Accordion styling for principles */
+.accordion-button {
+    width: 100%;
+    text-align: left;
+    padding: 1rem;
+    background-color: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.accordion-button:hover {
+    background-color: #f3f4f6;
+}
+
+.accordion-content {
+    padding: 1rem;
+    border-left: 3px solid #3b82f6;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
